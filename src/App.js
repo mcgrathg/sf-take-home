@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-const OPTIONS = ['Arms', 'Shoulders', 'Back', 'Cleavage', 'Midsection', 'Rear', 'Legs'];
+const OPTIONS = [
+  'Arms',
+  'Shoulders',
+  'Back',
+  'Cleavage',
+  'Midsection',
+  'Rear',
+  'Legs',
+];
 
 class App extends Component {
   render() {
@@ -11,7 +19,7 @@ class App extends Component {
           What do you like to <span className="highlighted">show off</span>?
         </p>
         <div className="options">
-          { /* FIXME: options should be rendered inside this div */ }
+          {/* FIXME: options should be rendered inside this div */}
         </div>
 
         <div className="cta">

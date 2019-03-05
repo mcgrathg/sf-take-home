@@ -7,7 +7,7 @@ describe('mocked fetch', () => {
   it('mocks response', async () => {
     await fetch('/whatever')
       .then(response => response.json())
-      .then((body) => {
+      .then(body => {
         expect(body).toEqual(OPTIONS);
       });
   });
