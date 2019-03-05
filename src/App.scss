@@ -1,0 +1,90 @@
+@import "./colors";
+
+/**
+* You're free to modify or improve anything
+* in this file as you see fit.
+*/
+
+/**
+* CLASSES
+* ---------------------------------------
+* These are applied to the existing UI.
+*/
+
+.container {
+  max-width: 40rem;
+  margin: 4rem auto 0;
+  text-align: center;
+}
+
+.prompt {
+  margin: 0 auto 1rem;
+  color:#2F3237;
+  font-size: 1.5rem;
+  line-height: 1.75;
+}
+
+.highlighted {
+  position: relative;
+  font-weight: 800;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.5rem;
+    width: 100%;
+    content: '';
+    background-color: $teal;
+    z-index: -1;
+  }
+}
+
+.options {
+  margin: 3rem 0;
+}
+
+/**
+* MIXINS
+* ---------------------------------------
+* You can use these as a starting point to
+* style the missing pieces of the UI.
+*/
+
+@mixin rounded-item {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid $grey-border;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+
+  @media (min-width: 500px) {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@mixin checked {
+  border-color: $turquoise;
+  color: white;
+  background-color: $turquoise;
+}
+
+@mixin cta {
+  display: inline-block;
+  min-width: 9rem;
+  border: 1px solid $watermelon;
+  padding: 0.5rem 1rem;
+  color: #f05d61;
+  background-color: #fff;
+
+  @media (min-width: 500px) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@mixin cta-hover {
+  color: white;
+  background-color: $watermelon;
+}
