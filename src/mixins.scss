@@ -1,0 +1,44 @@
+/**
+* MIXINS
+* ---------------------------------------
+* You can use these as a starting point to
+* style the missing pieces of the UI.
+*/
+
+@mixin rounded-item {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid $grey-border;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+
+  @media (min-width: 500px) {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@mixin checked {
+  border-color: $turquoise;
+  color: white;
+  background-color: $turquoise;
+}
+
+@mixin cta {
+  display: inline-block;
+  min-width: 9rem;
+  border: 1px solid $watermelon;
+  padding: 0.5rem 1rem;
+  color: #f05d61;
+  background-color: #fff;
+
+  @media (min-width: 500px) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@mixin cta-hover {
+  color: white;
+  background-color: $watermelon;
+}
