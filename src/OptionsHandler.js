@@ -23,7 +23,7 @@ class OptionsHandler extends Component {
     stageIndex: 0,
   };
 
-  onSubmitSelections = (selections = []) => {
+  setSelectionsForStage = (selections = []) => {
     const { stageIndex, selected } = this.state;
     const currentStage = STAGES[stageIndex];
     const newSelections = selections.reduce(
@@ -45,10 +45,12 @@ class OptionsHandler extends Component {
     const { selected, stageIndex } = this.state;
 
     return children({
-      onSubmit: this.onSubmitSelections,
-      options: OPTIONS.filter(option => !selected[option]),
+      selectedOptions: selected,
       stageName: STAGES[stageIndex],
-      allSelections: selected,
+      stageProps: {
+        options: OPTIONS.filter(option => !selected[option]),
+        onSubmit: this.setSelectionsForStage,
+      },
     });
   }
 }
