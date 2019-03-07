@@ -27,11 +27,13 @@
 
 @mixin cta {
   display: inline-block;
-  min-width: 9rem;
+  min-width: 13rem;
+  height: 3.25rem;
   border: 1px solid $watermelon;
   padding: 0.5rem 1rem;
   color: #f05d61;
   background-color: #fff;
+  transition: all 0.25s ease-in;
 
   @media (min-width: 500px) {
     padding: 1rem 1.5rem;

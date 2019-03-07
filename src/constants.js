@@ -1,0 +1,3 @@
+export const LOVE_STAGE = 'LOVE_STAGE';
+export const DOWNPLAY_STAGE = 'DOWNPLAY_STAGE';
+export const STAGES = [LOVE_STAGE, DOWNPLAY_STAGE];

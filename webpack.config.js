@@ -21,19 +21,12 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.md$/,
-        use: [
-          { loader: 'html-loader' },
-          { loader: 'markdown-loader' },
-        ],
+        use: [{ loader: 'html-loader' }, { loader: 'markdown-loader' }],
       },
       {
         test: /\.gif$/,
@@ -46,6 +39,8 @@ module.exports = {
     contentBase: './src',
     hot: true,
   },
+
+  devtool: 'eval-source-map',
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

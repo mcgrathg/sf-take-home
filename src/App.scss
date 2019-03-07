@@ -44,3 +44,20 @@
 .options {
   margin: 3rem 0;
 }
+
+.cta {
+  @include cta;
+
+  &:hover,
+  &:focus {
+    @include cta-hover;
+  }
+}
+
+.option {
+  @include rounded-item;
+
+  &.checked {
+    @include checked;
+  }
+}

@@ -1,25 +1,57 @@
 import React, { Component } from 'react';
+import 'sanitize.css';
 import './App.scss';
+import { LOVE_STAGE, DOWNPLAY_STAGE } from './constants';
+import OptionsHandler from './OptionsHandler';
+import Stage from './Stage';
 
-const OPTIONS = ['Arms', 'Shoulders', 'Back', 'Cleavage', 'Midsection', 'Rear', 'Legs'];
+const App = () => {
+  return (
+    <div className="container">
+      <OptionsHandler>
+        {({ onSubmit, options, stageName, allSelections }) => {
+          if (stageName === LOVE_STAGE) {
+            return (
+              <Stage
+                prompt={
+                  <>
+                    {'What do you like to '}
+                    <span className="highlighted">show off</span>?
+                  </>
+                }
+                options={options}
+                onSubmit={onSubmit}
+              />
+            );
+          }
 
-class App extends Component {
-  render() {
-    return (
-      <div className="container">
-        <p className="prompt">
-          What do you like to <span className="highlighted">show off</span>?
-        </p>
-        <div className="options">
-          { /* FIXME: options should be rendered inside this div */ }
-        </div>
+          if (stageName === DOWNPLAY_STAGE) {
+            return (
+              <Stage
+                prompt={
+                  <>
+                    {"Anything you'd like to "}
+                    <span className="highlighted">downplay</span>?
+                  </>
+                }
+                options={options}
+                onSubmit={onSubmit}
+              />
+            );
+          }
 
-        <div className="cta">
-          <a className="cta__button">→</a>
-        </div>
-      </div>
-    );
-  }
-}
+          return (
+            <>
+              <h1>Results</h1>
+              <pre>
+                <code>{JSON.stringify(allSelections, null, 2)}</code>
+              </pre>
+            </>
+          );
+        }}
+      </OptionsHandler>
+    </div>
+  );
+};
 
 export default App;
