@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { STAGES } from './constants';
+import { STAGES } from '../config/constants';
 
 const OPTIONS = [
   'Arms',
