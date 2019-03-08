@@ -2,12 +2,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 import GlobalStyle from './config/global-style';
-import { LOVE_STAGE, DOWNPLAY_STAGE } from './config/constants';
+import { SHOW_OFF_STAGE, DOWNPLAY_STAGE } from './config/constants';
 import OptionsHandler from './stage/OptionsHandler';
-import LoveStage from './stage/LoveStage';
+import ShowOffStage from './stage/ShowOffStage';
 import DownplayStage from './stage/DownplayStage';
-
-import 'sanitize.css';
+import CompletedStage from './stage/CompletedStage';
 
 const Container = styled.div`
   max-width: 40rem;
@@ -17,27 +16,27 @@ const Container = styled.div`
 
 const App = () => (
   <Container>
-    <GlobalStyle />
     <OptionsHandler>
-      {({ stageName, selectedOptions, stageProps }) => {
-        if (stageName === LOVE_STAGE) {
-          return <LoveStage {...stageProps} />;
+      {({ stageName, stageSelections, options, onSubmit }) => {
+        if (stageName === SHOW_OFF_STAGE) {
+          return <ShowOffStage options={options} onSubmit={onSubmit} />;
         }
 
         if (stageName === DOWNPLAY_STAGE) {
-          return <DownplayStage {...stageProps} />;
+          return <DownplayStage options={options} onSubmit={onSubmit} />;
         }
 
+        const { showOff = [], downplay = [] } = stageSelections;
         return (
-          <>
-            <h1>Results</h1>
-            <pre>
-              <code>{JSON.stringify(selectedOptions, null, 2)}</code>
-            </pre>
-          </>
+          <CompletedStage
+            showOff={showOff}
+            downplay={downplay}
+            comfortable={options}
+          />
         );
       }}
     </OptionsHandler>
+    <GlobalStyle />
   </Container>
 );
 

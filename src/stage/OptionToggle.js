@@ -52,7 +52,6 @@ const OptionToggle = ({ option, isSelected, onToggled }) => (
     aria-pressed={isSelected ? 'true' : 'false'}
     className={`option ${isSelected ? 'checked' : ''}`}
     onClick={() => {
-      debugger;
       onToggled(option, !isSelected);
     }}
   >

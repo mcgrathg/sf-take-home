@@ -2,6 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { STAGES } from '../config/constants';
+import StageSelectionHandler from './StageSelectionHandler';
 
 const OPTIONS = [
   'Arms',
@@ -21,10 +22,11 @@ class OptionsHandler extends Component {
   state = {
     selected: {},
     stageIndex: 0,
+    stageSelections: {},
   };
 
   setSelectionsForStage = (selections = []) => {
-    const { stageIndex, selected } = this.state;
+    const { stageIndex, selected, stageSelections } = this.state;
     const currentStage = STAGES[stageIndex];
     const newSelections = selections.reduce(
       (acc, curr) => ({
@@ -34,23 +36,28 @@ class OptionsHandler extends Component {
       {},
     );
 
+    const selectionsForState = new Set(stageSelections[currentStage] || []);
+    selections.forEach(selection => selectionsForState.add(selection));
+
     this.setState({
-      selected: { ...selected, ...newSelections },
       stageIndex: stageIndex + 1,
+      selected: { ...selected, ...newSelections },
+      stageSelections: {
+        ...stageSelections,
+        ...{ [currentStage]: Array.from(selectionsForState) },
+      },
     });
   };
 
   render() {
     const { children } = this.props;
-    const { selected, stageIndex } = this.state;
+    const { selected, stageIndex, stageSelections } = this.state;
 
     return children({
-      selectedOptions: selected,
       stageName: STAGES[stageIndex],
-      stageProps: {
-        options: OPTIONS.filter(option => !selected[option]),
-        onSubmit: this.setSelectionsForStage,
-      },
+      stageSelections,
+      options: OPTIONS.filter(option => !selected[option]),
+      onSubmit: this.setSelectionsForStage,
     });
   }
 }

@@ -45,12 +45,14 @@ const Prompt = ({ prompt, highlight, promptEnd }) => (
 );
 
 Prompt.propTypes = {
-  prompt: PropTypes.string.isRequired,
-  highlight: PropTypes.string.isRequired,
+  prompt: PropTypes.string,
+  highlight: PropTypes.string,
   promptEnd: PropTypes.string,
 };
 
 Prompt.defaultProps = {
+  prompt: '',
+  highlight: '',
   promptEnd: '?',
 };
 
