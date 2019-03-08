@@ -20,25 +20,9 @@
 
 .prompt {
   margin: 0 auto 1rem;
-  color: #2f3237;
+  color: $grey-dark;
   font-size: 1.5rem;
   line-height: 1.75;
-}
-
-.highlighted {
-  position: relative;
-  font-weight: 800;
-
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0.5rem;
-    width: 100%;
-    content: '';
-    background-color: $teal;
-    z-index: -1;
-  }
 }
 
 .options {
@@ -52,12 +36,46 @@
   &:focus {
     @include cta-hover;
   }
+
+  &:active {
+    transform: scale(0.98);
+    transition: none;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px $grey-light, 0 0 0 5px $watermelon;
+  }
 }
 
 .option {
   @include rounded-item;
 
+  &:focus,
+  &.checked:focus:active {
+    box-shadow: 0 0 0 2px $grey-light, 0 0 0 3px $grey-border;
+  }
+
+  &:active:focus,
+  &.checked:focus {
+    box-shadow: 0 0 0 2px $grey-light, 0 0 0 3px $turquoise;
+  }
+
+  &:active {
+    transform: scale(1.1);
+    background-color: $turquoise;
+    color: white;
+
+    &:focus {
+    }
+  }
+
   &.checked {
     @include checked;
+
+    &:active {
+      background-color: white;
+      color: inherit;
+      border-color: $grey-border;
+    }
   }
 }

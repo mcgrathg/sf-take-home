@@ -8,7 +8,9 @@
 
 html {
   color: $grey-dark;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   background: $grey-light;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,6 +19,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+button:focus {
+  outline: none;
+  transition: box-shadow 0.15s, transform 0.1s;
 }
 
 .navigation {
