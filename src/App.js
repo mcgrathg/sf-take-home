@@ -8,14 +8,14 @@ import ShowOffStage from './stage/ShowOffStage';
 import DownplayStage from './stage/DownplayStage';
 import CompletedStage from './stage/CompletedStage';
 
-const Container = styled.div`
+const Survey = styled.main`
   max-width: 40rem;
   margin: 4rem auto 0;
   text-align: center;
 `;
 
 const App = () => (
-  <Container>
+  <Survey>
     <OptionsHandler>
       {({ stageName, stageSelections, options, onSubmit }) => {
         if (stageName === SHOW_OFF_STAGE) {
@@ -37,7 +37,7 @@ const App = () => (
       }}
     </OptionsHandler>
     <GlobalStyle />
-  </Container>
+  </Survey>
 );
 
 export default App;

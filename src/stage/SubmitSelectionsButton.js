@@ -4,18 +4,14 @@ import styled from 'styled-components';
 import colors from '../config/colors';
 
 const StyledButton = styled.button`
-  display: inline-block;
-  min-width: 13rem;
+  width: 13rem;
+  max-width: 100%;
   height: 3.25rem;
   border: 1px solid ${colors.watermelon};
   padding: 0.5rem 1rem;
   color: ${colors.watermelon};
-  background-color: $white;
+  background-color: ${colors.white};
   transition: all 0.25s ease-in;
-
-  @media (min-width: 500px) {
-    padding: 1rem 1.5rem;
-  }
 
   &:hover,
   &:focus {
@@ -34,7 +30,7 @@ const StyledButton = styled.button`
 `;
 
 const SubmitSelectionsButton = ({ onClickHandler, text }) => (
-  <StyledButton type="button" onClick={onClickHandler}>
+  <StyledButton type="button" onClick={onClickHandler} title="Next">
     {text}
   </StyledButton>
 );

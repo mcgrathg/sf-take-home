@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    readme: './src/readme/index.js',
     index: './src/index.js',
   },
 
@@ -53,12 +52,6 @@ module.exports = {
       template: './public/index.html',
       chunks: ['index'],
       filename: 'index.html',
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-      chunks: ['readme'],
-      filename: 'readme',
     }),
   ],
 };

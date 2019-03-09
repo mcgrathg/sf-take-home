@@ -4,11 +4,12 @@ import styled from 'styled-components';
 import { Spring } from 'react-spring/renderprops';
 import colors from '../config/colors';
 
-const StyledPrompt = styled.p`
+const StyledPrompt = styled.h1`
   margin: 0 auto 1rem;
   color: ${colors.greyDark};
   font-size: 1.5rem;
   line-height: 1.75;
+  font-weight: normal;
 `;
 
 const Highlighted = styled.span`
