@@ -21,7 +21,7 @@ const Highlighted = styled.span`
     left: 0;
     bottom: 0;
     height: 0.5rem;
-    width: ${props => props.width};
+    width: ${props => `${props.percent}%`};
     content: '';
     background-color: #ccf2f0;
     z-index: -1;
@@ -32,13 +32,13 @@ const Prompt = ({ prompt, highlight, promptEnd }) => (
   <StyledPrompt>
     {prompt}
     <Spring
-      from={{ number: 0 }}
-      to={{ number: 100 }}
+      from={{ percent: 0 }}
+      to={{ percent: 100 }}
       delay={500}
       config={{ duration: 500 }}
     >
-      {({ number }) => (
-        <Highlighted width={`${number}%`}>{highlight}</Highlighted>
+      {({ percent }) => (
+        <Highlighted percent={percent}>{highlight}</Highlighted>
       )}
     </Spring>
     {promptEnd}

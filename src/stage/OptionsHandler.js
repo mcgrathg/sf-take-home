@@ -2,7 +2,6 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { STAGES } from '../config/constants';
-import StageSelectionHandler from './StageSelectionHandler';
 
 const OPTIONS = [
   'Arms',
