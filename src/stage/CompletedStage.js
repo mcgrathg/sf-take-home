@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import FadeIn from './FadeIn';
 import Prompt from './Prompt';
 
 const Category = styled.div`
@@ -23,7 +24,7 @@ const Selection = styled.span`
 
 const CompletedStage = ({ showOff, downplay, comfortable }) => {
   return (
-    <>
+    <FadeIn>
       <Category>
         <Prompt prompt="You're " highlight="Showing Off" promptEnd=":" />
         <Selections>
@@ -48,7 +49,7 @@ const CompletedStage = ({ showOff, downplay, comfortable }) => {
           ))}
         </Selections>
       </Category>
-    </>
+    </FadeIn>
   );
 };
 
