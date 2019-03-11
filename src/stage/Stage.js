@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FadeIn from './FadeIn';
-import StageHandler from './StageSelectionHandler';
+import StageSelectionHandler from './StageSelectionHandler';
 import Prompt from './Prompt';
 import OptionToggles from './OptionToggles';
 import SubmitSelectionsButton from './SubmitSelectionsButton';
@@ -10,7 +10,7 @@ const Stage = ({ onSubmit, options, prompt, highlight }) => (
   <FadeIn>
     <Prompt prompt={prompt} highlight={highlight} />
 
-    <StageHandler>
+    <StageSelectionHandler>
       {({ onOptionToggled, selected, resetSelections }) => {
         return (
           <>
@@ -22,14 +22,21 @@ const Stage = ({ onSubmit, options, prompt, highlight }) => (
 
             <SubmitSelectionsButton
               onClickHandler={() => {
-                onSubmit(Object.keys(selected));
+                onSubmit(
+                  Object.entries(selected).reduce((acc, [key, value]) => {
+                    if (value) {
+                      acc.push(key);
+                    }
+                    return acc;
+                  }, []),
+                );
                 resetSelections();
               }}
             />
           </>
         );
       }}
-    </StageHandler>
+    </StageSelectionHandler>
   </FadeIn>
 );
 
