@@ -18,4 +18,16 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/jsx-one-expression-per-line': 0,
   },
+  overrides: [
+    {
+      files: ['**/__tests__/**'],
+      settings: {
+        'import/resolver': {
+          jest: {
+            jestConfigFile: path.join(__dirname, './jest.config.js'),
+          },
+        },
+      },
+    },
+  ],
 };
