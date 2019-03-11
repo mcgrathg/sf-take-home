@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+.c0 {
+  margin: 0 auto 1rem;
+  color: #2f3237;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  font-weight: normal;
+}
+
+.c1 {
+  position: relative;
+  font-weight: 800;
+}
+
+.c1::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.5rem;
+  width: 0%;
+  content: '';
+  background-color: #ccf2f0;
+  z-index: -1;
+}
+
+<h1
+  class="c0"
+>
+  
+  <span
+    class="c1"
+  />
+  ?
+</h1>
+`;

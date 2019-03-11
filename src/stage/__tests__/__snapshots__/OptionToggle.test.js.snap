@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+/>
+`;

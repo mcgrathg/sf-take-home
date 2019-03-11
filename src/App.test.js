@@ -12,7 +12,3 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
-
-it('tests your new code', () => {
-  throw new Error('Add tests here');
-});
