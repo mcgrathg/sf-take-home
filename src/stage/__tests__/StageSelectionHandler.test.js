@@ -3,10 +3,12 @@ import { render } from 'react-testing-library';
 import { childrenFunc } from 'test-utils';
 import StageSelectionHandler from '../StageSelectionHandler';
 
-test('renders', () => {
-  const { container } = render(
-    <StageSelectionHandler>{childrenFunc}</StageSelectionHandler>,
-  );
+describe('StageSelectionHandler', () => {
+  it('renders', () => {
+    const { container } = render(
+      <StageSelectionHandler>{childrenFunc}</StageSelectionHandler>,
+    );
 
-  expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

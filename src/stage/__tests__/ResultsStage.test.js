@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { noOp } from 'test-utils';
-import OptionToggle from '../OptionToggle';
+import ResultsStage from '../ResultsStage';
 
-describe('OptionToggle', () => {
+describe('ResultsStage', () => {
   it('renders', () => {
     const { container } = render(
-      <OptionToggle option="" isSelected={false} onToggled={noOp} />,
+      <ResultsStage showOff={[]} downplay={[]} comfortable={[]} />,
     );
 
     expect(container.firstChild).toMatchSnapshot();

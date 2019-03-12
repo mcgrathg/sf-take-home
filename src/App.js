@@ -6,7 +6,7 @@ import { SHOW_OFF_STAGE, DOWNPLAY_STAGE } from './config/constants';
 import OptionsHandler from './stage/OptionsHandler';
 import ShowOffStage from './stage/ShowOffStage';
 import DownplayStage from './stage/DownplayStage';
-import CompletedStage from './stage/CompletedStage';
+import ResultsStage from './stage/ResultsStage';
 
 const Survey = styled.main`
   max-width: 40rem;
@@ -28,7 +28,7 @@ const App = () => (
 
         const { showOff = [], downplay = [] } = stageSelections;
         return (
-          <CompletedStage
+          <ResultsStage
             showOff={showOff}
             downplay={downplay}
             comfortable={options}

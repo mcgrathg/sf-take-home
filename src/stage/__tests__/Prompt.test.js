@@ -2,8 +2,10 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import Prompt from '../Prompt';
 
-test('renders', () => {
-  const { container } = render(<Prompt />);
+describe('Prompt', () => {
+  it('renders', () => {
+    const { container } = render(<Prompt />);
 
-  expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

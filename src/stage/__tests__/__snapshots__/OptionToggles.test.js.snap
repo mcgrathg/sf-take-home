@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders 1`] = `
+exports[`OptionToggles renders 1`] = `
 .c0 {
   margin: 3rem 0;
 }

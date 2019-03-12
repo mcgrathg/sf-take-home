@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Spring } from 'react-spring/renderprops.cjs';
 import colors from '../config/colors';
 
 const StyledPrompt = styled.h1`
@@ -21,29 +20,55 @@ const Highlighted = styled.span`
     left: 0;
     bottom: 0;
     height: 0.5rem;
-    width: ${props => `${props.percent}%`};
+    width: 100%;
     content: '';
-    background-color: #ccf2f0;
+    background-color: ${colors.teal};
     z-index: -1;
+    transition: all 0.5s;
+    transform-origin: left top;
+    transform: scale(0, 1);
+  }
+
+  &.animate::after {
+    transform: scale(1, 1);
   }
 `;
 
-const Prompt = ({ prompt, highlight, promptEnd }) => (
-  <StyledPrompt>
-    {prompt}
-    <Spring
-      from={{ percent: 0 }}
-      to={{ percent: 100 }}
-      delay={500}
-      config={{ duration: 500 }}
-    >
-      {({ percent }) => (
-        <Highlighted percent={percent}>{highlight}</Highlighted>
-      )}
-    </Spring>
-    {promptEnd}
-  </StyledPrompt>
-);
+class Prompt extends Component {
+  state = {
+    animate: false,
+  };
+
+  isMounted = false;
+
+  componentDidMount() {
+    this.isMounted = true;
+
+    setTimeout(() => {
+      if (this.isMounted) {
+        this.setState({ animate: true });
+      }
+    }, 500);
+  }
+
+  componentWillUnmount() {
+    this.isMounted = false;
+  }
+
+  render() {
+    const { prompt, highlight, promptEnd } = this.props;
+    const { animate } = this.state;
+    return (
+      <StyledPrompt>
+        {prompt}
+        <Highlighted className={`${animate ? 'animate' : ''}`}>
+          {highlight}
+        </Highlighted>
+        {promptEnd}
+      </StyledPrompt>
+    );
+  }
+}
 
 Prompt.propTypes = {
   prompt: PropTypes.string,

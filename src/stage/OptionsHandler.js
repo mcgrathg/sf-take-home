@@ -1,17 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { STAGES } from '../config/constants';
-
-const OPTIONS = [
-  'Arms',
-  'Shoulders',
-  'Back',
-  'Cleavage',
-  'Midsection',
-  'Rear',
-  'Legs',
-];
+import { STAGES, OPTIONS } from '../config/constants';
 
 class OptionsHandler extends Component {
   static propTypes = {

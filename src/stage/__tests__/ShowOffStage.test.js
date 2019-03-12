@@ -3,10 +3,12 @@ import { render } from 'react-testing-library';
 import { noOp } from 'test-utils';
 import ShowOffStage from '../ShowOffStage';
 
-test('renders', () => {
-  const { container } = render(
-    <ShowOffStage options={[]} onSubmit={noOp} prompt="" highlight="" />,
-  );
+describe('ShowOffStage', () => {
+  it('renders', () => {
+    const { container } = render(
+      <ShowOffStage options={[]} onSubmit={noOp} prompt="" highlight="" />,
+    );
 
-  expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

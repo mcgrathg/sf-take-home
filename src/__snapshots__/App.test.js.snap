@@ -1,0 +1,1477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Shows first stage (ShowOff) 1`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Arms
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 2`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Shoulders
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 3`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Back
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 4`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Cleavage
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 5`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Midsection
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 6`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Rear
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 7`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Legs
+</button>
+`;
+
+exports[`App Shows first stage (ShowOff) 8`] = `
+.c0 {
+  width: 13rem;
+  max-width: 100%;
+  height: 3.25rem;
+  border: 1px solid #d43f43;
+  padding: 0.5rem 1rem;
+  color: #d43f43;
+  background-color: #fff;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #fff;
+  background-color: #d43f43;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0 3px #f2f0ee,0 0 0 5px #d43f43;
+}
+
+<button
+  class="c0"
+  title="Next"
+  type="button"
+>
+  →
+</button>
+`;
+
+exports[`App renders without crashing 1`] = `
+.c1 {
+  margin: 0 auto 1rem;
+  color: #2f3237;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  font-weight: normal;
+}
+
+.c2 {
+  position: relative;
+  font-weight: 800;
+}
+
+.c2::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.5rem;
+  width: 100%;
+  content: '';
+  background-color: #ccf2f0;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.c2.mounted::after {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c4 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c4:focus,
+.c4.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c4:active:focus,
+.c4.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c4:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c4.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c4.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+.c3 {
+  margin: 3rem 0;
+}
+
+.c5 {
+  width: 13rem;
+  max-width: 100%;
+  height: 3.25rem;
+  border: 1px solid #d43f43;
+  padding: 0.5rem 1rem;
+  color: #d43f43;
+  background-color: #fff;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.c5:hover,
+.c5:focus {
+  color: #fff;
+  background-color: #d43f43;
+}
+
+.c5:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c5:focus {
+  box-shadow: 0 0 0 3px #f2f0ee,0 0 0 5px #d43f43;
+}
+
+.c0 {
+  max-width: 40rem;
+  margin: 4rem auto 0;
+  text-align: center;
+}
+
+@media (min-width:500px) {
+  .c4 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<main
+  class="c0"
+>
+  <div
+    style="opacity: 0;"
+  >
+    <h1
+      class="c1"
+    >
+      What do you like to 
+      <span
+        class="c2"
+      >
+        show off
+      </span>
+      ?
+    </h1>
+    <div
+      class="c3"
+    >
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Arms
+      </button>
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Shoulders
+      </button>
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Back
+      </button>
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Cleavage
+      </button>
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Midsection
+      </button>
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Rear
+      </button>
+      <button
+        aria-pressed="false"
+        class="option  c4"
+        type="button"
+      >
+        Legs
+      </button>
+    </div>
+    <button
+      class="c5"
+      title="Next"
+      type="button"
+    >
+      →
+    </button>
+  </div>
+</main>
+`;
+
+exports[`App shows Downplay stage without selected ShowOff options 1`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Shoulders
+</button>
+`;
+
+exports[`App shows Downplay stage without selected ShowOff options 2`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Back
+</button>
+`;
+
+exports[`App shows Downplay stage without selected ShowOff options 3`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Midsection
+</button>
+`;
+
+exports[`App shows Downplay stage without selected ShowOff options 4`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Rear
+</button>
+`;
+
+exports[`App shows Downplay stage without selected ShowOff options 5`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Legs
+</button>
+`;
+
+exports[`App shows Results stage 1`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Arms
+</span>
+`;
+
+exports[`App shows Results stage 2`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Shoulders
+</span>
+`;
+
+exports[`App shows Results stage 3`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Back
+</span>
+`;
+
+exports[`App shows Results stage 4`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Cleavage
+</span>
+`;
+
+exports[`App shows Results stage 5`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Midsection
+</span>
+`;
+
+exports[`App shows Results stage 6`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Rear
+</span>
+`;
+
+exports[`App shows Results stage 7`] = `
+.c0 {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+<span
+  class="c0"
+>
+  Legs
+</span>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 1`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Arms
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 2`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Shoulders
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 3`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Back
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 4`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Cleavage
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 5`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Midsection
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 6`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Rear
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 7`] = `
+.c0 {
+  max-width: 11rem;
+  margin: 0 0.25rem 0.75rem;
+  border: 1px solid #c0bdba;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.c0:focus,
+.c0.checked:focus:active {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px #c0bdba;
+}
+
+.c0:active:focus,
+.c0.checked:focus {
+  box-shadow: 0 0 0 2px #f2f0ee,0 0 0 3px $turquoise;
+}
+
+.c0:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: #1695a3;
+  color: #fff;
+}
+
+.c0.checked {
+  border-color: #1695a3;
+  color: #fff;
+  background-color: #1695a3;
+}
+
+.c0.checked:active {
+  background-color: #fff;
+  color: inherit;
+  border-color: #c0bdba;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    margin: 0 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+<button
+  aria-pressed="false"
+  class="option  c0"
+  type="button"
+>
+  Legs
+</button>
+`;
+
+exports[`App shows second stage (Downplay) after submitting from ShowOff 8`] = `
+.c0 {
+  width: 13rem;
+  max-width: 100%;
+  height: 3.25rem;
+  border: 1px solid #d43f43;
+  padding: 0.5rem 1rem;
+  color: #d43f43;
+  background-color: #fff;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #fff;
+  background-color: #d43f43;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0 3px #f2f0ee,0 0 0 5px #d43f43;
+}
+
+<button
+  class="c0"
+  title="Next"
+  type="button"
+>
+  →
+</button>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders 1`] = `
+exports[`ResultsStage renders 1`] = `
 .c1 {
   margin: 0 auto 1rem;
   color: #2f3237;
@@ -19,10 +19,24 @@ exports[`renders 1`] = `
   left: 0;
   bottom: 0;
   height: 0.5rem;
-  width: 0%;
+  width: 100%;
   content: '';
   background-color: #ccf2f0;
   z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.c2.mounted::after {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c0 {
@@ -52,6 +66,7 @@ exports[`renders 1`] = `
 >
   <div
     class="c0"
+    data-testid="show-off-results"
   >
     <h1
       class="c1"
@@ -70,6 +85,7 @@ exports[`renders 1`] = `
   </div>
   <div
     class="c0"
+    data-testid="downplay-results"
   >
     <h1
       class="c1"
@@ -88,6 +104,7 @@ exports[`renders 1`] = `
   </div>
   <div
     class="c0"
+    data-testid="other-results"
   >
     <h1
       class="c1"

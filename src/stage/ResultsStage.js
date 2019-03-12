@@ -22,10 +22,10 @@ const Selection = styled.span`
   letter-spacing: 0.7px;
 `;
 
-const CompletedStage = ({ showOff, downplay, comfortable }) => {
+const ResultsStage = ({ showOff, downplay, comfortable }) => {
   return (
     <FadeIn>
-      <Category>
+      <Category data-testid="show-off-results">
         <Prompt prompt="You're " highlight="Showing Off" promptEnd=":" />
         <Selections>
           {showOff.map(text => (
@@ -33,7 +33,7 @@ const CompletedStage = ({ showOff, downplay, comfortable }) => {
           ))}
         </Selections>
       </Category>
-      <Category>
+      <Category data-testid="downplay-results">
         <Prompt prompt="We'll " highlight="Downplay" promptEnd=":" />
         <Selections>
           {downplay.map(text => (
@@ -41,7 +41,7 @@ const CompletedStage = ({ showOff, downplay, comfortable }) => {
           ))}
         </Selections>
       </Category>
-      <Category>
+      <Category data-testid="other-results">
         <Prompt prompt="You're comfortable about" promptEnd=":" />
         <Selections>
           {comfortable.map(text => (
@@ -53,10 +53,10 @@ const CompletedStage = ({ showOff, downplay, comfortable }) => {
   );
 };
 
-CompletedStage.propTypes = {
+ResultsStage.propTypes = {
   showOff: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   downplay: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   comfortable: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };
 
-export default CompletedStage;
+export default ResultsStage;
