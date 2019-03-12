@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Spring } from 'react-spring/renderprops.cjs';
+import { Spring } from 'react-spring';
 
 const FadeIn = ({ children }) => {
   return (
