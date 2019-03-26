@@ -38,15 +38,51 @@ class OptionsHandler extends Component {
     });
   };
 
+  changeSelectionsForStage = (stageName, selections = []) => {
+    const { selected } = this.state;
+
+    const newSelected = { ...selected };
+
+    const changedStageIdx = STAGES.indexOf(stageName);
+
+    selections.forEach(selection => {
+      const existingSelectionStage = newSelected[selection];
+      if (existingSelectionStage) {
+        if (changedStageIdx < STAGES.indexOf(existingSelectionStage)) {
+          newSelected[selection] = stageName;
+        }
+      } else {
+        newSelected[selection] = stageName;
+      }
+    });
+
+    const newStageSelections = Object.entries(newSelected).reduce(
+      (acc, [feature, stage]) => {
+        const values = acc[stage] || [];
+        if (stage !== stageName || selections.includes(feature)) {
+          values.push(feature);
+        }
+        acc[stage] = values;
+        return acc;
+      },
+      {},
+    );
+
+    this.setState({
+      selected: newSelected,
+      stageSelections: newStageSelections,
+    });
+  };
+
   render() {
     const { children } = this.props;
-    const { selected, stageIndex, stageSelections } = this.state;
+    const { stageSelections } = this.state;
 
     return children({
-      stageName: STAGES[stageIndex],
       stageSelections,
-      options: OPTIONS.filter(option => !selected[option]),
+      options: OPTIONS,
       onSubmit: this.setSelectionsForStage,
+      onChange: this.changeSelectionsForStage,
     });
   }
 }

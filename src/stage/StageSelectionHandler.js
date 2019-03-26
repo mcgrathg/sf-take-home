@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 class StageSelectionHandler extends Component {
   static propTypes = {
     children: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
+  };
+
+  static defaultProps = {
+    onChange: () => {},
   };
 
   state = {
@@ -11,13 +16,23 @@ class StageSelectionHandler extends Component {
   };
 
   onOptionToggled = (option = '', isToggled = true) => {
-    this.setState(({ selected }) => ({
-      selected: { ...selected, [option]: isToggled },
-    }));
+    const { selected } = this.state;
+
+    this.updateSelectedState({ ...selected, [option]: isToggled });
   };
 
   resetSelections = () => {
-    this.setState({ selected: {} });
+    this.updateSelectedState({});
+  };
+
+  updateSelectedState = newSelectedState => {
+    const { onChange } = this.props;
+
+    this.setState({ selected: newSelectedState });
+
+    if (onChange) {
+      onChange(newSelectedState);
+    }
   };
 
   render() {

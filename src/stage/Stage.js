@@ -6,12 +6,32 @@ import Prompt from './Prompt';
 import OptionToggles from './OptionToggles';
 import SubmitSelectionsButton from './SubmitSelectionsButton';
 
-const Stage = ({ onSubmit, options, prompt, highlight, className }) => (
+const getSelectedNames = selected =>
+  Object.entries(selected).reduce((acc, [key, value]) => {
+    if (value) {
+      acc.push(key);
+    }
+    return acc;
+  }, []);
+
+const Stage = ({
+  stageName,
+  onSubmit,
+  onSelectionsChange,
+  options,
+  prompt,
+  highlight,
+  className,
+}) => (
   <FadeIn>
     <Prompt prompt={prompt} highlight={highlight} />
 
-    <StageSelectionHandler>
-      {({ onOptionToggled, selected, resetSelections, ...rest }) => {
+    <StageSelectionHandler
+      onChange={selected => {
+        onSelectionsChange(stageName, getSelectedNames(selected));
+      }}
+    >
+      {({ onOptionToggled, selected, resetSelections }) => {
         return (
           <>
             <OptionToggles
@@ -23,14 +43,7 @@ const Stage = ({ onSubmit, options, prompt, highlight, className }) => (
 
             <SubmitSelectionsButton
               onClickHandler={() => {
-                onSubmit(
-                  Object.entries(selected).reduce((acc, [key, value]) => {
-                    if (value) {
-                      acc.push(key);
-                    }
-                    return acc;
-                  }, []),
-                );
+                onSubmit(getSelectedNames(selected));
                 resetSelections();
               }}
             />
@@ -47,10 +60,14 @@ Stage.propTypes = {
   prompt: PropTypes.string.isRequired,
   highlight: PropTypes.string.isRequired,
   className: PropTypes.string,
+  stageName: PropTypes.string,
+  onSelectionsChange: PropTypes.func,
 };
 
 Stage.defaultProps = {
   className: '',
+  stageName: '',
+  onSelectionsChange: () => {},
 };
 
 export default Stage;
