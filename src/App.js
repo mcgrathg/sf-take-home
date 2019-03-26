@@ -1,12 +1,10 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import Loadable from 'react-loadable';
 import GlobalStyle from './config/global-style';
 import { SHOW_OFF_STAGE, DOWNPLAY_STAGE } from './config/constants';
 import OptionsHandler from './stage/OptionsHandler';
-import ShowOffStage from './stage/ShowOffStage';
-import DownplayStage from './stage/DownplayStage';
-import ResultsStage from './stage/ResultsStage';
 
 const Survey = styled.main`
   max-width: 40rem;
@@ -14,21 +12,43 @@ const Survey = styled.main`
   text-align: center;
 `;
 
+const Loading = () => <div>Loading...</div>;
+
+const LoadableShowOffStage = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "show-off-stage" */ './stage/ShowOffStage'),
+  loading: Loading,
+});
+
+const LoadableDownplayStage = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "downplay-stage" */ './stage/DownplayStage'),
+  loading: Loading,
+});
+
+const LoadableResultsStage = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "results-stage" */ './stage/ResultsStage'),
+  loading: Loading,
+});
+
 const App = () => (
   <Survey>
     <OptionsHandler>
       {({ stageName, stageSelections, options, onSubmit }) => {
         if (stageName === SHOW_OFF_STAGE) {
-          return <ShowOffStage options={options} onSubmit={onSubmit} />;
+          return <LoadableShowOffStage options={options} onSubmit={onSubmit} />;
         }
 
         if (stageName === DOWNPLAY_STAGE) {
-          return <DownplayStage options={options} onSubmit={onSubmit} />;
+          return (
+            <LoadableDownplayStage options={options} onSubmit={onSubmit} />
+          );
         }
 
         const { showOff = [], downplay = [] } = stageSelections;
         return (
-          <ResultsStage
+          <LoadableResultsStage
             showOff={showOff}
             downplay={downplay}
             comfortable={options}
