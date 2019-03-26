@@ -7,7 +7,7 @@ const StyledOptions = styled.div`
   margin: 3rem 0;
 `;
 
-const OptionToggles = ({ options, selected, onOptionToggled }) => (
+const OptionToggles = ({ options, selected, onOptionToggled, ...rest }) => (
   <StyledOptions>
     {options.map(option => (
       <OptionToggle
@@ -15,6 +15,7 @@ const OptionToggles = ({ options, selected, onOptionToggled }) => (
         option={option}
         isSelected={Boolean(selected[option])}
         onToggled={onOptionToggled}
+        {...rest}
       />
     ))}
   </StyledOptions>

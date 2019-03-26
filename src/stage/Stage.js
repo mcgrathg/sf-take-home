@@ -6,18 +6,19 @@ import Prompt from './Prompt';
 import OptionToggles from './OptionToggles';
 import SubmitSelectionsButton from './SubmitSelectionsButton';
 
-const Stage = ({ onSubmit, options, prompt, highlight }) => (
+const Stage = ({ onSubmit, options, prompt, highlight, className }) => (
   <FadeIn>
     <Prompt prompt={prompt} highlight={highlight} />
 
     <StageSelectionHandler>
-      {({ onOptionToggled, selected, resetSelections }) => {
+      {({ onOptionToggled, selected, resetSelections, ...rest }) => {
         return (
           <>
             <OptionToggles
               options={options}
               onOptionToggled={onOptionToggled}
               selected={selected}
+              className={className}
             />
 
             <SubmitSelectionsButton
@@ -45,6 +46,11 @@ Stage.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   prompt: PropTypes.string.isRequired,
   highlight: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
+
+Stage.defaultProps = {
+  className: '',
 };
 
 export default Stage;

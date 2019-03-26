@@ -6,9 +6,9 @@ import colors from '../config/colors';
 const StyledToggle = styled.button`
   max-width: 11rem;
   margin: 0 0.25rem 0.75rem;
+  padding: 0.5rem 1rem;
   border: 1px solid ${colors.greyBorder};
   border-radius: 1.5rem;
-  padding: 0.5rem 1rem;
   background-color: ${colors.white};
 
   @media (min-width: 500px) {
@@ -23,7 +23,7 @@ const StyledToggle = styled.button`
 
   &:active:focus,
   &.checked:focus {
-    box-shadow: 0 0 0 2px ${colors.greyLight}, 0 0 0 3px $turquoise;
+    box-shadow: 0 0 0 2px ${colors.greyLight}, 0 0 0 3px ${colors.turquoise};
   }
 
   &:active {
@@ -42,15 +42,23 @@ const StyledToggle = styled.button`
       color: inherit;
       border-color: ${colors.greyBorder};
     }
+
+    &.show-off {
+      transform: scale(1.05);
+    }
+
+    &.downplay {
+      transform: scale(0.95);
+    }
   }
 `;
 
-const OptionToggle = ({ option, isSelected, onToggled }) => (
+const OptionToggle = ({ option, isSelected, onToggled, className }) => (
   <StyledToggle
     key={option}
     type="button"
     aria-pressed={isSelected ? 'true' : 'false'}
-    className={`option ${isSelected ? 'checked' : ''}`}
+    className={`option ${className} ${isSelected ? 'checked' : ''}`}
     onClick={() => {
       onToggled(option, !isSelected);
     }}
@@ -63,6 +71,11 @@ OptionToggle.propTypes = {
   option: PropTypes.string.isRequired,
   isSelected: PropTypes.bool.isRequired,
   onToggled: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+
+OptionToggle.defaultProps = {
+  className: '',
 };
 
 export default OptionToggle;
