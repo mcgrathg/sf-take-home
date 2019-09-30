@@ -1,6 +1,6 @@
-# Stitch Fix Front-End Exercise
+# SF Front-End Exercise
 
-When a user first signs up for Stitch Fix, we ask them to fill out a style profile so we can begin to understand their preferences. We're currently redesigning this survey to be more mobile-friendly and visually engaging.
+When a user first signs up, we ask them to fill out a style profile so we can begin to understand their preferences. We're currently redesigning this survey to be more mobile-friendly and visually engaging.
 
 In one section of the survey, we ask potential clients what they love to show off. Using the answers to that question, we follow up and ask if there are other things they prefer to downplay. The intended behavior and UI are shown here:
 
@@ -39,6 +39,6 @@ Launch the [dev server](/) and start coding! 😀
 
 ## Greg's Notes
 
-I changed the watermelon color to be slightly darker to be more accessible. The previous color did not produce enough contrast with the white button text. By making these buttons WCAG 2 AA compliant, more users will be better able to use stitchfix.com. This color change is merely a suggestion that can easily be undone. I understand that the previous shade of red is being used throughout Stitch Fix's site.
+I changed the watermelon color to be slightly darker to be more accessible. The previous color did not produce enough contrast with the white button text. By making these buttons WCAG 2 AA compliant, more users will be better able to use <<your-website>>. This color change is merely a suggestion that can easily be undone. I understand that the previous shade of red is being used throughout <<your-website>>'s site.
 
 I also added subtle rings around the in-focus element to improve keyboard navigation. Those visual cues will also enhance the user's experience without drawing attention from the task at hand.
